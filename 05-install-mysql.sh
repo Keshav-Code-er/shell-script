@@ -20,3 +20,16 @@ then
    else
    echo "Installation Successful"
    fi
+
+
+   #Installation of postfix
+
+   yum install postfix -y
+
+   if [ $? -ne 0 ]
+   then
+   echo "Installation Error"
+   exit 1
+   else
+   echo "Installation Successful"
+   fi
