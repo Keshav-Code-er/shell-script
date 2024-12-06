@@ -8,7 +8,7 @@ if [ $USERID -ne 0 ]
 # this function should validate the previous command and inform user it is success or faliure
 VALIDATE(){
    # $1 will receive the argument1
-   if [$1 -ne 0 ]
+   if [ $1 -ne 0 ]
    then
    echo "$2 ... FAILURE"
    exit 1
