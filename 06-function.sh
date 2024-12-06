@@ -4,7 +4,6 @@
 
 USERID=$(id -u)
 
-if [ $USERID -ne 0 ]
 # this function should validate the previous command and inform user it is success or faliure
 VALIDATE(){
    # $1 will receive the argument1
@@ -16,6 +15,8 @@ VALIDATE(){
    echo "$2 ... SUCCESS"
    fi 
 }
+
+if [ $USERID -ne 0 ]
 then 
    echo "ERROR:: Please run this script with root access"
    exit 1
