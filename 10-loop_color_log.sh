@@ -29,8 +29,8 @@ VALIDATE() {
 # all args are in $@
 
 for i in $@; do
-    yumlist installed $i &>>$LOGFILE
-    if [$? -ne 0]; then
+    yum list installed $i &>>$LOGFILE
+    if [ $? -ne 0 ]; then
         echo "$i is not installed, Let's Install it"
         yum install $i -y &>>$LOGFILE
         VALIDATE $? "$i"
