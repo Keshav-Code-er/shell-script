@@ -13,4 +13,5 @@ do
  do
    yum install $i -y
 
-   done   
+   done  # [ centos@ip-172-31-94-198 ~/shell-script ]$ sudo sh 09-loops.sh git postfix cyrus-sasl-plain mailx mysql
+   
