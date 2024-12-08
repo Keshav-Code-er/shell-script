@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DATE=$(date %+F)
+DATE=$(date +%F)
 LOGDIR=/home/centos/shell-script/shell_script-log
 #/home/centos/shell-script/shell_script-log/script-name-date.log
 SCRIPT_NAME=$0
