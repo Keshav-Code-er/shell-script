@@ -24,7 +24,7 @@ while IFS= read line
     #this command will give you usage in number formate for comparision
     usage=$(echo $line | awk '{print $6}' | cut -d % -f1)
     #this command will give us partition
-    partition= $(echo $line | awk '{print $1}') #here $1 & $6 is line number
+    partition=$(echo $line | awk '{print $1}') #here $1 & $6 is line number
     #now you need to check whether it is more than threshold or not
 
     if [ $usage -gt $DISK_USAGE_THRESHOLD ];
